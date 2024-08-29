@@ -9,7 +9,7 @@
 
 ## Description
 
-A generator and client Python script to lock a scripts use based on time with a license key.
+A generator and client Python script to lock a script's use based on time with a license key.
 
 ## Setup and Configuration
 
