@@ -3,8 +3,9 @@ import base64
 from datetime import datetime
 import time
 import sys
+import os
 
-license_key = "MjAyNC0wOC0yOCAyMzoxMXw4OTAzMTBjNTFmYjI3YTZkOGVjMWVlZGZlODE2Yzg3MGRhNzYxOWFlNTJmZmZlZTJjZmVjZTg1YTk3OTVlZmYx"
+license_key = "Your License Key Here"
 
 def validate_license(key):
     """Validates the license key from the config."""
@@ -31,6 +32,7 @@ def countdown():
         remaining_time = expiry_date - datetime.now()
         print(remaining_time)
         time.sleep(1)
+        os.system('cls')
     print("License has expired.")
     sys.exit(1)
 
